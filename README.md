@@ -1,16 +1,38 @@
-# heros
+# Flutter Classroom Project 🚀
 
-A new Flutter project.
+This project was developed for educational purposes to help students learn the basic principles of Flutter.  
+During the lessons, we will cover:
 
-## Getting Started
+- 📱 Flutter UI basics
+- 🎯 Good development practices
+- 🌐 API integration using HTTP requests
+- 🧪 Basic state management
 
-This project is a starting point for a Flutter application.
+## 📚 What you'll learn
 
-A few resources to get you started if this is your first Flutter project:
+- Widget structure and layout
+- Stateless vs Stateful widgets
+- Navigation between screens
+- How to make API calls
+- Organizing project structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Technologies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Flutter](https://flutter.dev/)
+- Dart
+- RESTful APIs
+
+## 🏁 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/Magnothiago/myhero.git
+
+# Navigate to the project folder
+cd myhero
+
+# Get dependencies
+flutter pub get
+
+# Run the app
+flutter run
