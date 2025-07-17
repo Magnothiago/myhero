@@ -2,7 +2,7 @@ import 'package:heros/data/models/hero_model.dart';
 import 'package:heros/domain/repositories/heros_repository.dart';
 import 'package:mobx/mobx.dart';
 
-part 'hero_view_model.g.dart';
+part 'hero_viewmodel.g.dart';
 
 class HeroViewModel = HeroViewModelBase with _$HeroViewModel;
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:heros/ui/home/hero_view_model.dart';
+import 'package:heros/ui/home/hero_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 // ignore: must_be_immutable

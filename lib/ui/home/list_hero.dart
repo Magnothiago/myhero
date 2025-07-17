@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:heros/ui/home/hero_view_model.dart';
+import 'package:heros/ui/home/hero_viewmodel.dart';
 import 'package:mobx/mobx.dart';
 
 class ListHero extends StatefulWidget {

@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'hero_view_model.dart';
+part of 'hero_viewmodel.dart';
 
 // **************************************************************************
 // StoreGenerator

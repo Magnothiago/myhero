@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:heros/core/services/dio_client.dart';
 import 'package:heros/data/repositories/heros_repository_impl.dart';
 import 'package:heros/ui/home/hero_profile.dart';
-import 'package:heros/ui/home/hero_view_model.dart';
+import 'package:heros/ui/home/hero_viewmodel.dart';
 import 'package:heros/ui/home/list_hero.dart';
 import 'package:provider/provider.dart';
 
