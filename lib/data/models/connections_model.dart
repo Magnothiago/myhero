@@ -4,6 +4,7 @@ part 'connections_model.g.dart';
 
 @JsonSerializable()
 class ConnectionsModel {
+  @JsonKey(name: 'group-affiliation')
   final String? groupAffiliation;
 
   final String? relatives;

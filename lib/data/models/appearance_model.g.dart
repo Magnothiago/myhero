@@ -14,8 +14,8 @@ AppearanceModel _$AppearanceModelFromJson(Map<String, dynamic> json) =>
           (json['height'] as List<dynamic>?)?.map((e) => e as String).toList(),
       weight:
           (json['weight'] as List<dynamic>?)?.map((e) => e as String).toList(),
-      eyeColor: json['eyeColor'] as String?,
-      hairColor: json['hairColor'] as String?,
+      eyeColor: json['eye-color'] as String?,
+      hairColor: json['hair-color'] as String?,
     );
 
 Map<String, dynamic> _$AppearanceModelToJson(AppearanceModel instance) =>
@@ -24,6 +24,6 @@ Map<String, dynamic> _$AppearanceModelToJson(AppearanceModel instance) =>
       'race': instance.race,
       'height': instance.height,
       'weight': instance.weight,
-      'eyeColor': instance.eyeColor,
-      'hairColor': instance.hairColor,
+      'eye-color': instance.eyeColor,
+      'hair-color': instance.hairColor,
     };

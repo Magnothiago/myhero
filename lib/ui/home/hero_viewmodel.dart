@@ -28,6 +28,20 @@ abstract class HeroViewModelBase with Store {
   @observable
   String? errorMessage;
 
+  @observable
+  String? heroName;
+
+  @action
+  void setupName() {
+    if (hero?.biography?.fullName != null) {
+      if (hero!.biography!.fullName!.isNotEmpty) {
+        heroName = hero?.biography?.fullName;
+      } else {
+        heroName = hero?.name;
+      }
+    }
+  }
+
   @action
   void setIdHero(value) {
     id = value;
@@ -41,6 +55,7 @@ abstract class HeroViewModelBase with Store {
     try {
       final result = await _repository.getHeros(id);
       hero = result;
+      setupName();
       if (hero?.response != null) {
         if (hero!.response!.contains('error')) {
           errorMessage = hero!.response;
@@ -48,7 +63,6 @@ abstract class HeroViewModelBase with Store {
       }
     } catch (e) {
       errorMessage = 'Erro ao buscar herói: $e';
-
       hero = null;
     } finally {
       isLoading = false;

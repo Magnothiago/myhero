@@ -4,26 +4,30 @@ part 'biography_model.g.dart';
 
 @JsonSerializable()
 class BiographyModel {
-  // final String? fullName;
+  @JsonKey(name: 'full-name')
+  final String? fullName;
 
-  // final String? alterEgos;
+  @JsonKey(name: 'alter-egos')
+  final String? alterEgos;
 
   final List<String>? aliases;
 
-  // final String? placeOfBirth;
+  @JsonKey(name: 'place-of-birth')
+  final String? placeOfBirth;
 
-  // final String? firstAppearance;
+  @JsonKey(name: 'first-appearance')
+  final String? firstAppearance;
 
   final String? publisher;
 
   final String? alignment;
 
   BiographyModel({
-    // required this.fullName,
-    // required this.alterEgos,
+    required this.fullName,
+    required this.alterEgos,
     required this.aliases,
-    // required this.placeOfBirth,
-    // required this.firstAppearance,
+    required this.placeOfBirth,
+    required this.firstAppearance,
     required this.publisher,
     required this.alignment,
   });

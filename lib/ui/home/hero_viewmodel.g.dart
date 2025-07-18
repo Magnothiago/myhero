@@ -72,6 +72,22 @@ mixin _$HeroViewModel on HeroViewModelBase, Store {
     });
   }
 
+  late final _$heroNameAtom =
+      Atom(name: 'HeroViewModelBase.heroName', context: context);
+
+  @override
+  String? get heroName {
+    _$heroNameAtom.reportRead();
+    return super.heroName;
+  }
+
+  @override
+  set heroName(String? value) {
+    _$heroNameAtom.reportWrite(value, super.heroName, () {
+      super.heroName = value;
+    });
+  }
+
   late final _$getHeroAsyncAction =
       AsyncAction('HeroViewModelBase.getHero', context: context);
 
@@ -95,6 +111,17 @@ mixin _$HeroViewModel on HeroViewModelBase, Store {
   }
 
   @override
+  void setupName() {
+    final _$actionInfo = _$HeroViewModelBaseActionController.startAction(
+        name: 'HeroViewModelBase.setupName');
+    try {
+      return super.setupName();
+    } finally {
+      _$HeroViewModelBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   void setIdHero(dynamic value) {
     final _$actionInfo = _$HeroViewModelBaseActionController.startAction(
         name: 'HeroViewModelBase.setIdHero');
@@ -111,7 +138,8 @@ mixin _$HeroViewModel on HeroViewModelBase, Store {
 hero: ${hero},
 id: ${id},
 isLoading: ${isLoading},
-errorMessage: ${errorMessage}
+errorMessage: ${errorMessage},
+heroName: ${heroName}
     ''';
   }
 }

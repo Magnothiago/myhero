@@ -8,12 +8,12 @@ part of 'connections_model.dart';
 
 ConnectionsModel _$ConnectionsModelFromJson(Map<String, dynamic> json) =>
     ConnectionsModel(
-      groupAffiliation: json['groupAffiliation'] as String?,
+      groupAffiliation: json['group-affiliation'] as String?,
       relatives: json['relatives'] as String?,
     );
 
 Map<String, dynamic> _$ConnectionsModelToJson(ConnectionsModel instance) =>
     <String, dynamic>{
-      'groupAffiliation': instance.groupAffiliation,
+      'group-affiliation': instance.groupAffiliation,
       'relatives': instance.relatives,
     };

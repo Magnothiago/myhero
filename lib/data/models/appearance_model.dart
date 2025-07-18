@@ -9,8 +9,10 @@ class AppearanceModel {
   final List<String>? height;
   final List<String>? weight;
 
+  @JsonKey(name: 'eye-color')
   final String? eyeColor;
 
+  @JsonKey(name: 'hair-color')
   final String? hairColor;
 
   AppearanceModel({

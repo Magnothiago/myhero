@@ -56,7 +56,7 @@ class _HeroProfileState extends State<HeroProfile> {
                       height: 12,
                     ),
                     Text(
-                      viewModel.hero?.name ?? '',
+                      viewModel.heroName ?? '',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 24,
